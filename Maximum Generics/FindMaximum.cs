@@ -6,19 +6,19 @@ namespace Maximum_Generics
 {
     class FindMaximum
     {
-        public double findMaxDoubleValue(double firstValue, double secondValue, double thirdValue)
+        public string findMaxStringValue(string firstString, string secondString, string thirdString)
         {
-            if (firstValue.CompareTo(secondValue) > 0 && firstValue.CompareTo(thirdValue) > 0)
+            if (firstString.CompareTo(secondString) > 0 && firstString.CompareTo(thirdString) > 0)
             {
-                return firstValue;
+                return firstString;
             }
-            else if (secondValue.CompareTo(firstValue) > 0 && secondValue.CompareTo(thirdValue) > 0)
+            else if (secondString.CompareTo(firstString) > 0 && secondString.CompareTo(thirdString) > 0)
             {
-                return secondValue;
+                return secondString;
             }
             else
             {
-                return thirdValue;
+                return thirdString;
             }
         }
     }
